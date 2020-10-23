@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="REVA red de voluntariado ambiental">
+  <meta name="robots" content="index,follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/alianzas.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <title>REVA</title>
+</head>
+  <body>
+    <i class="icon-menu burger-button"></i>
+    <section class="navegacion navegacion2">
+      <nav class="menu">
+        <ul>
+          <li><a href="./index.html">Inicio</a> </li> 
+          <li><a href="./actividades.html">Actividades</a> </li> 
+          <li><a href="./nosotros.html">Nosotros</a></li>
+          <li><a href="./alianzas.html">Alianzas</a></li>
+          <li><a href="./auspiciantes.html">Auspiciantes</a></li>
+          <li><a href="./aplica.html">Aplica al voluntariado</a></li>
+        </ul>
+      </nav>
+    </section>
+  <header>
+    <div class="container-contacto">
+
+      <section class="contacto">
+        <div class="logo">
+          <figure>
+            <img src="./imagenes/logo.png" alt="">
+          </figure>
+        </div>
+        <div class="contenedor-contacto">
+          <div class="redes-sociales">
+            <a href="https://www.facebook.com/GrupoReva" target="_blank" ><i class="icon-facebook1"></i></a>
+            <a href="https://www.instagram.com/grupo_reva/" target="_blank"><i class="icon-instagram1"></i></a>
+            <a href="https://twitter.com/grupo_reva"target="_blank"><i class="icon-twitter1"></i></a>
+            <a href=""><i class="icon-linkedin"></i></a>
+          </div>
+          <a href="./aplica.html"><button>Conviertete en voluntario</button></a>
+        </section>
+      </div>
+    </div>
+    <div class="container-navegacion">
+
+      <section class="navegacion">
+        <nav class="menu">
+          <ul>
+            <li><a href="./index.html">Inicio</a> </li> 
+            <li><a href="./actividades.html">Actividades</a> </li> 
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./alianzas.html">Alianzas</a></li>
+            <li><a href="./auspiciantes.html">Auspiciantes</a></li>
+            <li><a href="./aplica.html">Aplica al voluntariado</a></li>
+          </ul>
+        </nav>
+      </section>
+    </div>
+    
+  </header>
+<main>
+  <h1>PROXIMAMENTE</h1>
+  
+</main>
+<footer>
+  <div class="contenedor-footer">
+
+    <div class="texto-footer">
+      <h1>REVA</h1>
+      <P>
+        Reva es una red de voluntariado
+        sin fines de lucro y sin asociacion 
+        politica alguna .
+      </P>
+      <p>reva@reva.com</p>
+    </div>
+    <div class="col2">
+      
+      <div class="patrocinadores-footer">
+        <h2>Nuestros patrocinadores</h2>
+        <div class="logos">
+          <figure>
+            <img src="./imagenes/logo clinica2.png" alt="">
+          </figure>
+          <figure>
+            <img src="./imagenes/AVCA-logo.png" alt="">
+          </figure>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="redes-footer">
+      <h2>Nuestras Redes</h2>
+      <a href="https://www.facebook.com/GrupoReva" target="_blank" ><i class="icon-facebook1"></i></a>
+      <a href="https://www.instagram.com/grupo_reva/" target="_blank"><i class="icon-instagram1"></i></a>
+      <a href="https://twitter.com/grupo_reva"target="_blank"><i class="icon-twitter1"></i></a>
+      <a href=""><i class="icon-linkedin"></i></a>
+      
+      </div>
+</footer>
+<script>
+  const menu = document.querySelector('.menu');
+  const burgerButton = document.querySelector('.burger-button');
+  burgerButton.addEventListener('click',hideShow);
+  function hideShow(){
+  if (menu.classList.contains('is-active')){
+    menu.classList.remove('is-active');
+  }else{
+  menu.classList.add('is-active');
+  }
+  }
+</script>
+</body>
+</html>
