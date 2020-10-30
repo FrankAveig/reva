@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?bc7hqo');
-  src:  url('../fonts/icomoon.eot?bc7hqo#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?bc7hqo') format('truetype'),
-    url('../fonts/icomoon.woff?bc7hqo') format('woff'),
-    url('../fonts/icomoon.svg?bc7hqo#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?n3vy3a');
+  src:  url('../fonts/icomoon.eot?n3vy3a#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?n3vy3a') format('truetype'),
+    url('../fonts/icomoon.woff?n3vy3a') format('woff'),
+    url('../fonts/icomoon.svg?n3vy3a#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-whatsapp:before {
+  content: "\e907";
+  color: #25d366;
+}
 .icon-twitter:before {
   content: "\e902";
   color: #1da1f2;
@@ -48,6 +52,7 @@
 .icon-menu:before {
   content: "\e906";
 }
+
 
 
 
@@ -81,6 +86,11 @@ header .contacto button{
   border: none;
   border-radius: 5px;
   width: 215px;
+  transition: .3s background;
+
+}
+header .contacto button:hover{
+  background: #ff7e27;
 }
 
 header .contacto{
@@ -163,7 +173,8 @@ main h1{
   color: #333333;
 }
 main .auspiciantes .auspiciante{
-display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 margin: 3rem auto;
 width: 80%;
 }
@@ -300,6 +311,14 @@ body > footer > div.redes-footer > a:nth-child(5) > i:hover{
     font-size: 1.2rem;
   }
 
+}
+@media screen and (max-width :768px){
+  main .auspiciantes .auspiciante{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width :704px){

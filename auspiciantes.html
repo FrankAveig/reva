@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./css/auspiciantes.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Permanent+Marker&display=swap" rel="stylesheet">
   <title>REVA</title>
+  <link rel="icon" type="image/png" href="./imagenes/favicon.png">
+
 </head>
   <body>
     <i class="icon-menu burger-button"></i>
@@ -39,7 +41,7 @@
             <a href="https://twitter.com/grupo_reva"target="_blank"><i class="icon-twitter1"></i></a>
             <a href=""><i class="icon-linkedin"></i></a>
           </div>
-          <a href="./aplica.html"><button>Conviertete en voluntario</button></a>
+          <a href="./aplica.html"><button>Conviértete en voluntario</button></a>
         </section>
       </div>
     </div>
@@ -69,7 +71,8 @@
       </figure>
       <div class="texto-auspiciante">
         <h2>Consultorio Veterinario "DR MILLER"</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur isicing elit, sed do eiusmod tempor incididunt magna.</p>
+        <p>El consultorio veterinario "Dr.Miller" es un centro especializado en la atención integral de la mascota,
+           desde hace mas de 27 años ofrecemos a nuestros clientes una completa atención para sus mascotas.</p>
       </div>
     </div>
     <div class="auspiciante">
@@ -77,25 +80,61 @@
         <img src="./imagenes/AVCA-logo.png" alt="">
       </figure>
           <div class="texto-auspiciante">
-        <h2>AVCA</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur isicing elit, sed do eiusmod tempor incididunt magna.</p>
+        <h2>AVCA Business Solutions</h2>
+        <p>AVCA nació de la idea de apoyar los emprendimientos y pequeños negocios, nuestro propósito está 
+          basado en el éxito de cada cliente que asesoramos, brindamos más que número e imágenes, acompañamos
+           a nuestros clientes en el entendimiento de todas las áreas de su empresa y caminamos junto a ellos
+            al crecimiento de la misma.</p>
       </div>
     </div>
 
   </section>
   
 </main>
+<a class="app-whatsapp" id="app-whatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=593996344037&amp;text=Hola!&nbsp;me&nbsp;dan&nbsp;información&nbsp;de&nbsp;REVA?&nbsp;" style="	position: fixed;
+right: 24px;
+bottom: 25px;
+width: 60px;
+z-index: 1000;
+display: block;
+bottom: 95px;
+">
+  <img src="./imagenes/whatsapp.png" alt="" style="width: 65px;">
+</a>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v8.0'
+    });
+  };
+
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your Chat Plugin code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="263716217757966"
+logged_in_greeting="Hola,¿cómo podemos ayudarte?"
+logged_out_greeting="Hola,¿cómo podemos ayudarte?">
+</div>
 <footer>
   <div class="contenedor-footer">
 
     <div class="texto-footer">
       <h1>REVA</h1>
       <P>
-        Reva es una red de voluntariado
-        sin fines de lucro y sin asociacion 
-        politica alguna .
+        Reva es una red de voluntariado sin fines de lucro y sin asociación política alguna .
       </P>
-      <p>reva@reva.com</p>
+      <p>informacion@revaecuador.org</p>
     </div>
     <div class="col2">
       
