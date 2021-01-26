@@ -68,7 +68,7 @@
     }
  
         //Ejemplo de como usar: 
-        if (form_mail("guidozedeno@revaecuador.org",
+        if (form_mail("informacion@revaecuador.org",
                                     "Solicitud de Voluntariado",
                                     "Los datos introducidos en el formulario son:\n",
                                     "Solicitud de Voluntariado"))

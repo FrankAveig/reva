@@ -184,7 +184,7 @@ main .actividades{
   grid-template-columns: 1fr 1fr;
   row-gap: 3rem;
 }
-body > main > div > section:nth-child(2){
+body > main > div > section:nth-child(even){
   background-color: #f6f5f2;
 }
 body > main > div > section:nth-child(1) > figure{

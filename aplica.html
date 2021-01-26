@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="./css/contactanos.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Permanent+Marker&display=swap" rel="stylesheet">
   <title>REVA</title>
-  <link rel="icon" type="image/png" href="./imagenes/favicon.png">
-
 </head>
   <body>
     <i class="icon-menu burger-button"></i>
@@ -17,11 +15,11 @@
       <nav class="menu">
         <ul>
           <li><a href="./index.html">Inicio</a> </li> 
-          <li><a href="./actividades.html">Actividades</a> </li> 
+          <li><a href="#">Actividades</a> </li> 
           <li><a href="./nosotros.html">Nosotros</a></li>
           <li><a href="./alianzas.html">Alianzas</a></li>
           <li><a href="./auspiciantes.html">Auspiciantes</a></li>
-          <li><a href="./aplica.html">Aplica al voluntariado</a></li>
+          <li><a href="./contactanos.html">Aplica al voluntariado</a></li>
         </ul>
       </nav>
     </section>
@@ -31,17 +29,17 @@
       <section class="contacto">
         <div class="logo">
           <figure>
-            <img src="./imagenes/logo.png" alt="logotipo">
+            <img src="./imagenes/logo.png" alt="">
           </figure>
         </div>
         <div class="contenedor-contacto">
           <div class="redes-sociales">
-            <a href="https://www.facebook.com/GrupoReva" target="_blank" ><i class="icon-facebook1"></i></a>
-            <a href="https://www.instagram.com/grupo_reva/" target="_blank"><i class="icon-instagram1"></i></a>
-            <a href="https://twitter.com/grupo_reva"target="_blank"><i class="icon-twitter1"></i></a>
+            <a href="https://www.facebook.com/GrupoReva"><i class="icon-facebook1"></i></a>
+            <a href="https://www.instagram.com/grupo_reva/"><i class="icon-instagram1"></i></a>
+            <a href="https://twitter.com/grupo_reva"><i class="icon-twitter1"></i></a>
             <a href=""><i class="icon-linkedin"></i></a>
           </div>
-          <a href="./aplica.html"><button>Conviértete en voluntario</button></a>
+          <button>Conviertete en voluntario</button>
         </section>
       </div>
     </div>
@@ -55,7 +53,7 @@
             <li><a href="./nosotros.html">Nosotros</a></li>
             <li><a href="./alianzas.html">Alianzas</a></li>
             <li><a href="./auspiciantes.html">Auspiciantes</a></li>
-            <li><a href="./aplica.html">Aplica al voluntariado</a></li>
+            <li><a href="./contactanos.html">Aplica al voluntariado</a></li>
           </ul>
         </nav>
       </section>
@@ -63,7 +61,16 @@
     
   </header>
 <main class="main">
-  <h1>APLICA AL VOLUNTARIADO</h1>
+  <h1>Formulario para voluntariado del Cantón Sucre, San Vicente y Chone</h1>
+  <section class="textoFormulario">
+    <ul>
+      <li>Todos los que conformamos la red te agradecemos por estar interesado en aplicar a nuestro voluntariado</li>
+      <li>La Red Estudiantil de Voluntariado Ambiental es una organización conformada por estudiantes y profesionales comprometidos con la problemática ambiental actual que enfrenta el planeta, la cual se enfoca en los impactos del cambio climático y la generación de soluciones para su reducción.</li>
+      <li>Dentro de la red podrás enfocarte en tú área y así contribuir al crecimiento de nuestra organización, podrás trabajar desde lo administrativo hasta voluntariado de campo.</li>
+      <li>Luego qué finalice el periodo de inscripciones, nos contactaremos contigo para empezar los 2 meses de prueba, en los cuales trabajaremos en viveros, mingas, reforestaciones etc.</li>
+      <li>Además, como prueba final tendrán que presentar un proyecto medio ambiental el cual beneficiara a su barrio, ciudadela o zona a la que pertenezcan, el mismo tendrá nuestro apoyo.</li>
+    </ul>
+  </section>
     <section class="formulario">
       <section class="viasContacto">
         <div class="viaContacto direccion">
@@ -87,32 +94,73 @@
     
         <label for="apellidos">APELLIDOS:</label>
         <input type='text' name='Apellidos' id='Apellidos' placeholder="Apellidos" required>
+
+        <label for="menu">CANTÓN</label>
+        <select name="canton" id="canton" required>
+            <option value="">Seleccione un cantón</option>
+            <option>Sucre</option>
+            <option>San Vicente</option>
+            <option>Chone</option>
+        </select>
+
+        <label for="telefono">DIRECCIÓN ESPECÍFICA:</label>
+        <input type='text' name='direccion' id='direccion' placeholder="Dirección" required>
     
-    
-    <label for="telefono">TELÉFONO:</label>
-    <input type='text' name='Telefono' id='Telefono' placeholder="Teléfono" required>
+        <label for="telefono">TELÉFONO:</label>
+        <input type='text' name='Telefono' id='Telefono' placeholder="Teléfono" required>
     
     
         <label for="email">CORREO:</label>
         <input type='text' name='E-mail' id='E-mail' placeholder="tu@correo.com" required>
     
+        <label for="profesion">¿QUÉ CARRERA CURSAS O QUÉ PROFESIÓN TIENES?</label>
+        <input type='text' name='Profesion' id='Profesion' placeholder="Profesión" required>
     
-        <label for="menu">VOLUNTARIADO AL QUE APLICA</label>
+        <label for="edad">¿CUÁNTOS AÑOS TIENES?</label>
+        <input type='text' name='Edad' id='Edad' placeholder="EDAD" required>
+
+        <label for="experienca">¿QUÉ EXPERIENCIAS HAS TENIDO TRABAJANDO EN VOLUNTARIADOS?</label>
+        <input type='text' name='Experiencia' id='Experiencia' placeholder="Experiencias" required>
+
+        <label for="conocer">¿CÓMO CONOCISTE A LA RED ESTUDIANTIL DE VOLUNTARIADO AMBIENTAL?</label>
+        <input type='text' name='Conocer' id='Conocer'  required>
+
+        <label for="Aspiraciones">¿PORQUE DESEAS SER PARTE DEL VOLUNTARIADO, QUE ASPIRACIONES TIENES?</label>
+        <input type='text' name='Aspiraciones' id='Aspiraciones' placeholder="Aspiraciones" required>
+
+        <label for="educacion">¿CREES QUE LA EDUCACIÓN AMBIENTAL ES IMPORTANTE POR QUÉ? </label>
+        <input type='text' name='Educacion' id='Educacion' placeholder="" required>
+
+        <label for="tiempo">¿QUÉ TIEMPO DISPONES LIBRES A LA SEMANA?</label>
+        <input type='text' name='Tiempo' id='Tiempo' placeholder="Tiempo Libre" required>
+
+        <label for="viajar">¿TIENES FACILIDAD DE VIAJAR A CANTONES CERCANOS? </label>
+        <select name="viajar" id="viajar" required>
+            <option value="">Seleccione una opción</option>
+            <option>Sí, pero no puedo cubrir mis viáticos</option>
+            <option>Si, puedo cubrir mis viáticos</option>
+            <option>No</option>
+        </select>
+
+        <label for="enfermedad">PRESENTA ALGÚN TIPO DE ENFERMEDAD O ALERGIA. (ESPECIFICAR)</label>
+        <input type='text' name='Enfermedad' id='Enfermedad' placeholder="Especificar que tipo de alergia o enfermedad" required>
+
+     <!--    <label for="menu">VOLUNTARIADO AL QUE APLICA</label>
         <select name="Voluntariado que aplica" id="menu" required>
             <option value="">Seleccione un tipo</option>
             <option>Voluntariado de Campo</option>
             <option>Voluntariado de investigacion</option>
             <option>Voluntariado de arte</option>
-        </select>
+        </select> -->
     
     
-            <label for="message">MENSAJE:</label>
+            <label for="message">ALGUNA SUGERENCIA TUYA</label>
             <textarea name="mensaje" cols="40" rows="6" placeholder="Ingresa un mensaje (opcional)"></textarea>
 
         
     
-        <label for="adjuntar archivo">ADJUNTAR HOJA DE VIDA:</label>
-        <input type='file' name='archivo1' id='archivo1' placeholder="carga tu boucher" required>
+        <!-- <label for="adjuntar archivo">ADJUNTAR HOJA DE VIDA:</label>
+        <input type='file' name='archivo1' id='archivo1' placeholder="carga tu boucher" required> -->
     
     
         <button class="submit" type='submit' value='Enviar formulario'>Enviar Mensaje</button>
@@ -122,50 +170,17 @@
 </form>
   
 </main>
-<a class="app-whatsapp" id="app-whatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=593996344037&amp;text=Hola!&nbsp;me&nbsp;dan&nbsp;información&nbsp;de&nbsp;REVA?&nbsp;" style="	position: fixed;
-right: 24px;
-bottom: 25px;
-width: 60px;
-z-index: 1000;
-display: block;
-bottom: 95px;
-">
-  <img src="./imagenes/whatsapp.png" alt="" style="width: 65px;">
-</a>
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v8.0'
-    });
-  };
-
-  (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<!-- Your Chat Plugin code -->
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="263716217757966"
-logged_in_greeting="Hola,¿cómo podemos ayudarte?"
-logged_out_greeting="Hola,¿cómo podemos ayudarte?">
-</div>
 <footer>
   <div class="contenedor-footer">
 
     <div class="texto-footer">
       <h1>REVA</h1>
       <P>
-        Reva es una red de voluntariado sin fines de lucro y sin asociación política alguna .
+        Reva es una red de voluntariado
+        sin fines de lucro y sin asociacion 
+        politica alguna .
       </P>
-      <p>informacion@revaecuador.org</p>
+      <p>reva@reva.com</p>
     </div>
     <div class="col2">
       
@@ -173,10 +188,10 @@ logged_out_greeting="Hola,¿cómo podemos ayudarte?">
         <h2>Nuestros patrocinadores</h2>
         <div class="logos">
           <figure>
-            <img src="./imagenes/logo clinica2.png" alt="logotipo de auspiciante veterinaria miller">
+            <img src="./imagenes/logo clinica2.png" alt="">
           </figure>
           <figure>
-            <img src="./imagenes/AVCA-logo.png" alt="logotipo de auspiciante asesorias avca">
+            <img src="./imagenes/AVCA-logo.png" alt="">
           </figure>
          
         </div>
@@ -185,9 +200,9 @@ logged_out_greeting="Hola,¿cómo podemos ayudarte?">
   </div>
     <div class="redes-footer">
       <h2>Nuestras Redes</h2>
-      <a href="https://www.facebook.com/GrupoReva" target="_blank" ><i class="icon-facebook1"></i></a>
-      <a href="https://www.instagram.com/grupo_reva/" target="_blank"><i class="icon-instagram1"></i></a>
-      <a href="https://twitter.com/grupo_reva"target="_blank"><i class="icon-twitter1"></i></a>
+      <a href=""><i class="icon-instagram1"></i></a>
+      <a href=""><i class="icon-facebook1"></i></a>
+      <a href=""><i class="icon-twitter1"></i></a>
       <a href=""><i class="icon-linkedin"></i></a>
       
       </div>
